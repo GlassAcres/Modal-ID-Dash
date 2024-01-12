@@ -1,0 +1,95 @@
+.convo-body,
+.convo-body * {
+  box-sizing: border-box;
+}
+.convo-body {
+  background: #ffffff;
+}
+.convo-header-container {
+  background: #83fac1;
+  width: 22.5rem;
+  height: 5.625rem;
+  position: absolute;
+  left: 0rem;
+  top: 0rem;
+}
+.convo-header {
+  background: #fef7f7;
+  width: 21.1875rem;
+  height: 4.375rem;
+  position: absolute;
+  left: 0.625rem;
+  top: 0.625rem;
+}
+.convo-list-header {
+  background: #cb9ad7;
+  width: 9.9375rem;
+  height: 3rem;
+  position: absolute;
+  left: 0.6875rem;
+  top: 0.6875rem;
+}
+.convo-list-utilities {
+  background: #ffc5fd;
+  width: 9.4375rem;
+  height: 3rem;
+  position: absolute;
+  left: 11.3125rem;
+  top: 0.6875rem;
+}
+.convo-convo-list {
+  background: #b6a4ff;
+  width: 22.5rem;
+  height: 34.375rem;
+  position: absolute;
+  left: 0rem;
+  top: 5.625rem;
+}
+.convo-convo-card {
+  background: #fef7f7;
+  width: 21.25rem;
+  height: 4.5rem;
+  position: absolute;
+  left: 0.625rem;
+  top: 0.625rem;
+}
+.convo-user-icon {
+  background: #f9b6ca;
+  width: 4.4375rem;
+  height: 3.375rem;
+  position: absolute;
+  left: 0.625rem;
+  top: 0.625rem;
+}
+.convo-item-details {
+  background: #f984d8;
+  width: 14.875rem;
+  height: 3.375rem;
+  position: absolute;
+  left: 5.6875rem;
+  top: 0.625rem;
+}
+.convo-summary {
+  color: #000000;
+  text-align: left;
+  font-family: 'Inter-Regular', sans-serif;
+  font-size: 0.75rem;
+  font-weight: 400;
+  position: absolute;
+  left: 0.5625rem;
+  top: 1.5rem;
+  width: 13.125rem;
+  height: 1.5rem;
+}
+.convo-assistant-name {
+  color: #000000;
+  text-align: left;
+  font-family: 'Inter-Regular', sans-serif;
+  font-size: 0.75rem;
+  font-weight: 400;
+  position: absolute;
+  left: 0.5625rem;
+  top: 0rem;
+  width: 13.125rem;
+  height: 1.5rem;
+}

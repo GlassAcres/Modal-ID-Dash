@@ -1,0 +1,68 @@
+.training {
+  .file-upload-card,
+  .upload-status-card {
+    margin-bottom: 1rem;
+
+    .card-header {
+      background-color: #f8f9fa;
+      color: #4a4a4a;
+    }
+
+    .card-body {
+      padding: 1rem;
+
+      .file-instructions {
+        background-color: #e9ecef;
+        border: 1px dashed #adb5bd;
+        border-radius: 0.25rem;
+        padding: 0.5rem;
+        margin-bottom: 1rem;
+        text-align: center;
+        font-size: 0.875rem;
+        color: #495057;
+      }
+
+      .file-upload-area {
+        position: relative;
+        border: 2px dashed #adb5bd;
+        border-radius: 0.25rem;
+        text-align: center;
+        padding: 1rem;
+        cursor: pointer;
+
+        &:hover {
+          background-color: #f8f9fa;
+        }
+
+        input[type='file'] {
+          position: absolute;
+          width: 100%;
+          height: 100%;
+          left: 0;
+          top: 0;
+          opacity: 0;
+          cursor: pointer;
+        }
+      }
+
+      .submit-button {
+        margin-top: 1rem;
+        background-color: #4dbd74;
+        color: white;
+        border-color: #4dbd74;
+
+        &:hover {
+          background-color: #3a9d5d;
+          border-color: #3a9d5d;
+        }
+      }
+    }
+  }
+
+  .spinner-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 150px;
+  }
+}

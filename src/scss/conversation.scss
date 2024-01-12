@@ -1,0 +1,152 @@
+// conversations.module.scss
+
+.conversations-container {
+  display: flex;
+  max-height: 100vh;
+  width: 90vw;
+  margin-top: 1rem;
+}
+
+.conversations-list {
+  width: 30%;
+  overflow-y: auto;
+  border-radius: 10px;
+  height: 100%;
+}
+
+.conversations-form {
+  margin-bottom: 1rem;
+  font-size: 15px;
+}
+
+.list-item {
+  font-size: 12px;
+}
+.list-group-item {
+  overflow-x: hidden; /* Change from auto to hidden */
+  cursor: pointer;
+
+  .thread-id {
+    font-size: 12px;
+    display: block;
+    font-weight: bold;
+    white-space: nowrap; /* Add these properties */
+    overflow: hidden; /* for text truncation */
+    text-overflow: ellipsis;
+    max-width: 100px; /* Adjust as needed */
+    display: inline-block; /* Ensure this is treated as a block for overflow to work */
+  }
+
+  .thread-date {
+    font-size: 10px;
+    display: block;
+  }
+}
+
+.form-inputs {
+  width: fit-content;
+  margin-bottom: 10px;
+  .btn {
+    background-color: rgba(var(--cui-primary-rgb));
+    font-size: 12px;
+    font-weight: 600;
+    border: None;
+
+    color: #fff;
+  }
+}
+
+.dropdown-menu {
+  font-size: 12px;
+  font-weight: 700;
+  .dropdown-item {
+    font-weight: 700;
+  }
+}
+
+.thread-details {
+  width: 55%;
+  display: flex;
+  padding: 10px;
+  border-radius: 10px;
+  box-shadow: inset 0 0 8px rgba(0, 0, 0, 0.3);
+  visibility: visible;
+  flex-direction: column;
+  background-color: #f3f3f3;
+  overflow-y: auto;
+}
+
+.message-container {
+  flex-grow: 1;
+  overflow-y: auto;
+  border-radius: 10px;
+  visibility: visible;
+  background-color: None;
+  height: 60vh;
+  width: 100%;
+}
+
+.message {
+  margin: 10px;
+  padding: 10px;
+  border-radius: 10px;
+  font-size: 15px;
+  display: block;
+  background-color: None;
+  width: fit-content;
+  .message-source {
+    font-weight: bold;
+    font-size: 12px;
+    position: top;
+  }
+  &.user {
+    background-color: #e0f7fa;
+    margin-right: auto;
+    font-size: 0.8rem;
+  }
+  &.assistant {
+    background-color: #e8eaf6;
+    margin-right: auto;
+    font-size: 0.8rem;
+  }
+  .timestamp {
+    font-size: 0.6em;
+    text-align: right;
+    color: #666;
+  }
+}
+
+.thread-metadata {
+  display: none;
+  padding: 3px;
+  border-radius: 10px;
+  background-color: #e7e7e7;
+  border-top: 1px solid #ccc;
+  font-size: 0.85em;
+  color: #666;
+  p {
+    margin: 1px;
+    font-size: 10px;
+  }
+}
+
+@media (max-width: 768px) {
+  .conversations-container {
+    flex-direction: column;
+  }
+
+  .conversations-list,
+  .thread-details {
+    width: 90%;
+    max-height: 30vh;
+    margin: 10px;
+  }
+
+  .message-container {
+    max-height: 60vh;
+    margin-top: 10px;
+  }
+}
+.message {
+  display: block;
+}

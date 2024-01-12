@@ -1,0 +1,75 @@
+// Import CoreUI variables
+@import 'variables';
+
+// Override specific variables based on the extracted colors
+
+// Main background color (White)
+$background: #ffffff;
+
+// Primary elements and text (Teal)
+$primary: #6bd098; // for buttons and important elements
+$primary-text: #333333; // Dark grey for primary text
+
+// Secondary elements (Light orange)
+$secondary: #fcf4c4; // for secondary buttons or highlights
+$secondary-text: #666666; // Light grey for secondary text
+
+// Border and shadow colors (Light grey)
+$border: #f3f2ee; // for borders
+$shadow: rgba(0, 0, 0, 0.1); // Soft shadow for depth
+
+// Notification colors
+$success: #6bd098; // Teal for success messages
+$error: #f17e5d; // Soft red for error messages
+$warning: #fcf4c4; // Light orange for warnings
+
+// Typography
+$font-family: 'Helvetica Neue', sans-serif;
+$font-weight-normal: 400;
+$font-weight-bold: 700;
+
+// Import CoreUI
+@import 'theme';
+
+// Additional custom styles (if needed)
+body {
+  background-color: $background;
+  color: $primary-text;
+  font-family: $font-family;
+  font-weight: $font-weight-normal;
+}
+
+a,
+button {
+  color: $primary;
+  &:hover {
+    color: darken($primary, 10%);
+  }
+}
+
+.alert-success {
+  background-color: $success;
+  color: #fff;
+}
+
+.alert-error {
+  background-color: $error;
+  color: #fff;
+}
+
+.alert-warning {
+  background-color: $warning;
+  color: #333;
+}
+
+.sidebar {
+  --cui-sidebar-width: 14rem;
+}
+
+.header-nav {
+  @media (max-width: 575.98px) {
+    // Extra small devices (phones)
+    visibility: hidden;
+    display: none;
+  }
+}

@@ -1,0 +1,33 @@
+// Variable overrides
+//
+// If you want to customize your project please add your variables below.
+// Custom Color Variables for CoreUI Free React Admin Template
+
+// Primary color palette
+$white: #ffffff; // White for backgrounds
+$light-grey: #767676; // Light Grey for secondary backgrounds
+$light-orange: #dc846f; // Light Orange for highlights
+$soft-red: #ebbe3d; // Soft Red for errors
+$teal: #6b97e8; // Teal for success messages
+$very-light-grey: #f3f2ee; // Very Light Grey for UI elements
+$another-light-grey: #f2f1fd; // Another Shade of Light Grey
+
+// Additional theme colors
+$primary: $teal; // Main theme color
+$secondary: $teal; // Secondary theme color
+$success: $teal; // Success color
+$info: $light-grey; // Info color
+$warning: $light-orange; // Warning color
+$danger: $soft-red; // Danger color
+
+// Typography
+$font-family-sans-serif: 'Helvetica Neue', sans-serif;
+$font-size-base: 1rem;
+
+// Enable or disable shadows
+$enable-shadows: true;
+
+// Enable or disable gradients
+$enable-gradients: false;
+
+$enable-deprecation-messages: false !default;

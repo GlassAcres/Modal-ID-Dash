@@ -1,0 +1,48 @@
+// Overriding Theme styles for CoreUI Free React Admin Template
+
+// Apply custom theme colors
+// Apply custom theme colors
+.wrapper {
+  width: 100%;
+  @include ltr-rtl('padding-left', var(--cui-sidebar-occupy-start, 0));
+  @include ltr-rtl('padding-right', var(--cui-sidebar-occupy-end, 0));
+  will-change: auto;
+  @include transition(padding 0.15s);
+  background-color: $white; // keep the background color change
+}
+
+// Other styles...
+
+// Customizing the navbar
+.navbar {
+  background-color: $another-light-grey;
+}
+
+// Footer styles
+.footer {
+  background-color: $light-grey;
+}
+
+// Card styles
+.card {
+  background-color: $white;
+  border-color: $very-light-grey;
+  @if $enable-shadows {
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  }
+}
+
+.header.header-sticky {
+  @media (max-width: 575.98px) {
+    position: sticky;
+    top: 0px;
+    z-index: 1020;
+    height: 10vh;
+  }
+
+  .mb-4 {
+    @media (max-width: 575.98px) {
+      margin-bottom: 3.5rem !important;
+    }
+  }
+}

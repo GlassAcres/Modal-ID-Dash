@@ -1,0 +1,76 @@
+// SupportRequests.scss
+.support-requests-card {
+  margin: 20px;
+  padding: 20px;
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+  border-radius: 8px;
+  background-color: #fff;
+}
+
+.table-responsive {
+  overflow-x: auto;
+  margin-top: 20px;
+
+  table {
+    width: 100%;
+    border-collapse: collapse;
+    min-width: 600px;
+
+    thead {
+      tr {
+        background-color: #f8f9fa;
+
+        th {
+          padding: 12px 15px;
+          text-align: left;
+          font-weight: bold;
+          border-bottom: 2px solid #dee2e6;
+          font-size: 1vw;
+        }
+      }
+    }
+
+    tbody {
+      tr {
+        &:nth-child(even) {
+          background-color: #f2f2f2;
+        }
+
+        td {
+          padding: 12px 15px;
+          border-bottom: 1px solid #dee2e6;
+          font-size: 1vw;
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: 768px) {
+  .support-requests-card {
+    padding: 10px;
+    margin: 10px;
+  }
+
+  .table-responsive {
+    table {
+      thead {
+        tr {
+          th {
+            padding: 8px;
+            font-size: 10px; // Fixed smaller font size for headers
+          }
+        }
+      }
+
+      tbody {
+        tr {
+          td {
+            padding: 8px;
+            font-size: calc(1vw + 3px); // Fixed smaller font size for cells
+          }
+        }
+      }
+    }
+  }
+}
