@@ -81,6 +81,8 @@ export const AppSidebarNav = ({ items, toggleChatbot, toggleSidebar }) => {
   )
 }
 
+export default AppSidebarNav
+
 AppSidebarNav.propTypes = {
   items: PropTypes.arrayOf(PropTypes.any).isRequired,
   toggleChatbot: PropTypes.func.isRequired,

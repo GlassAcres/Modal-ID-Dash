@@ -1,34 +1,41 @@
 import React from 'react'
 import CIcon from '@coreui/icons-react'
-import { cilMovie, cilSpeedometer, cilChatBubble, cilSettings } from '@coreui/icons'
+import { cilMovie, cilSpeedometer, cilChatBubble, cilSettings, cilVector } from '@coreui/icons'
 import { CNavItem } from '@coreui/react'
 
 const _nav = [
   {
     component: CNavItem,
     name: 'Demo',
+    tooltip: 'Demo',
     to: '/demo',
     icon: <CIcon icon={cilMovie} customClassName="nav-icon" />,
   },
   {
     component: CNavItem,
-    name: 'Dashboard Overview',
-    to: '/dashboard',
+    name: 'Analytics',
+    href: '#/dashboard',
     icon: <CIcon icon={cilSpeedometer} customClassName="nav-icon" />,
   },
 
   {
     component: CNavItem,
     name: 'Conversations',
-    to: '/conversations',
+    href: '#/conversations',
     icon: <CIcon icon={cilChatBubble} customClassName="nav-icon" />,
   },
 
   {
     component: CNavItem,
-    name: 'Chatbot Settings',
-    to: '/settings',
+    name: 'Agents',
+    href: '#/settings',
     icon: <CIcon icon={cilSettings} customClassName="nav-icon" />,
+  },
+  {
+    component: CNavItem,
+    name: 'Builder',
+    href: '#/flow',
+    icon: <CIcon icon={cilVector} customClassName="nav-icon" />,
   },
 ]
 

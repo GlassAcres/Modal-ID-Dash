@@ -63,7 +63,10 @@ button {
 }
 
 .sidebar {
-  --cui-sidebar-width: 14rem;
+  --cui-sidebar-width: 10rem;
+  background-color: (white, 95%);
+  font-weight: 700;
+  z-index: 40;
 }
 
 .header-nav {

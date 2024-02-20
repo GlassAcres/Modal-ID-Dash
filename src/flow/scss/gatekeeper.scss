@@ -1,0 +1,33 @@
+.gatekeeper-card {
+  padding: 10px;
+  font-size: 0.6rem;
+  border-radius: 10px;
+  border-color: gray !important;
+  border: 1px solid;
+  background: white;
+  width: 10rem;
+  height: 22rem;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+}
+
+.gatekeeper-card-header {
+  font-size: 16px;
+  color: #333;
+  margin-bottom: 10px;
+}
+
+.gatekeeper-field {
+  margin-bottom: 8px;
+  overflow-y: auto;
+  label {
+    font-weight: bold;
+    color: #555;
+  }
+}
+.gatekeeper-field-value {
+  max-height: 100px; // Adjust this value as needed
+  overflow-y: auto; // Enables vertical scrolling
+  padding: 4px;
+  border: 1px solid #ccc; // Optional, for better visibility
+  margin-top: 4px;
+}

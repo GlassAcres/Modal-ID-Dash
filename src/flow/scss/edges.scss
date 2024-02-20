@@ -1,0 +1,13 @@
+.react-flow__edge {
+  &.selected {
+    stroke: blue; /* Color when the edge is selected */
+  }
+  &:hover {
+    stroke: green; /* Color when hovered */
+  }
+}
+
+.edge-button {
+  fill: red; /* Color of the X button */
+  cursor: pointer;
+}

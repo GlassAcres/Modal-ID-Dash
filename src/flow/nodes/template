@@ -1,0 +1,6 @@
+"thread_id": "{{thread_id}}",
+"message": "{\"thread_id\": \"{{thread_id}}\", \"message\": \"{{inner_message}}\", \"name\": \"{{inner_name}}\", \"user_id\": \"{{inner_user_id}}\", \"instructions\": \"{{inner_instructions}}\", \"model\": \"{{inner_model}}\"}",
+"name": "{{outer_name}}",
+"user_id": "{{outer_user_id}}",
+"instructions": "{{outer_instructions}}",
+"model": "{{outer_model}}"

@@ -1,0 +1,12 @@
+.output-card {
+  border: 1px solid #eee;
+  padding: 10px;
+  border-radius: 5px;
+  background: white;
+  width: 200px;
+}
+
+.output-card input {
+  margin-bottom: 5px;
+  width: calc(100% - 10px);
+}

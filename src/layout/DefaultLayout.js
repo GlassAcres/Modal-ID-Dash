@@ -36,7 +36,6 @@ const DefaultLayout = () => {
         <div className="body flex-grow-2">
           <AppContent />
         </div>
-        <AppFooter />
       </div>
     </div>
   )

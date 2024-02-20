@@ -2,7 +2,7 @@ import axios from 'axios'
 
 const API_BASE_URL = 'https://projecthermes.replit.app'
 
-export const fetchThreads = async (startDate, endDate, limit = 10) => {
+export const fetchThreads = async (startDate, endDate, limit = 1000) => {
   try {
     const params = {}
     if (startDate) params.start_date = startDate
@@ -10,20 +10,21 @@ export const fetchThreads = async (startDate, endDate, limit = 10) => {
     params.limit = limit
 
     const response = await axios.get(`${API_BASE_URL}/threads`, { params })
-    return response.data // This will be the full array of thread objects
+    return response.data // Full array of thread objects
   } catch (error) {
     console.error('Error fetching threads', error)
-    return [] // Return an empty array in case of error
+    return [] // Empty array in case of error
   }
 }
-// In apiService.js
+
 export const fetchMessages = async (threadId) => {
   try {
     const response = await axios.get(`${API_BASE_URL}/messages/${threadId}`)
-
-    return response.data // This will be the array of message objects
+    return response.data // Array of message objects
   } catch (error) {
     console.error('Error fetching messages', error)
-    return [] // Return an empty array in case of error
+    return [] // Empty array in case of error
   }
 }
+
+// Export other functions if they are part of the api_service

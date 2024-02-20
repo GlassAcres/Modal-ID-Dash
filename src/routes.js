@@ -4,10 +4,11 @@ import React from 'react'
 
 const Dashboard = React.lazy(() => import('./views/dashboard/Dashboard'))
 const Conversations = React.lazy(() => import('./views/dashboard/Conversations'))
-const Support_Requests = React.lazy(() => import('./views/dashboard/Support_Requests'))
+const SupportRequests = React.lazy(() => import('./views/dashboard/SupportRequests'))
 const Colors = React.lazy(() => import('./views/theme/colors/Colors'))
 const Settings = React.lazy(() => import('./views/dashboard/Settings'))
 const Typography = React.lazy(() => import('./views/theme/typography/Typography'))
+const Flow = React.lazy(() => import('./flow/views/FlowView'))
 const ConvoTest = React.lazy(() => import('./views/dashboard/ConvoTest'))
 // Base
 const Accordion = React.lazy(() => import('./views/base/accordion/Accordion'))
@@ -60,7 +61,8 @@ const routes = [
   { path: '/dashboard', name: 'Dashboard', element: Dashboard },
   { path: '/convotest', name: 'convotest', element: ConvoTest },
   { path: '/conversations', name: 'Conversations', element: Conversations },
-  { path: '/support-requests', name: 'Support Requests', element: Support_Requests },
+  { path: '/support-requests', name: 'Support Requests', element: SupportRequests },
+  { path: '/flow', name: 'DragonDrop', element: Flow },
   { path: '/settings', name: 'Settings', element: Settings },
   { path: '/theme', name: 'Theme', element: Colors, exact: true },
   { path: '/theme/colors', name: 'Colors', element: Colors },
